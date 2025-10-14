@@ -17,6 +17,11 @@ typedef union NumberMath //64 bits;
 
 // khai báo hằng số
 enum {
+    SUN,
+    MOON,
+    EARTH
+};
+enum DAYOFWEEK{
     SUN, // 0
     MON, // 1
     TUE, // 2
@@ -24,6 +29,27 @@ enum {
     THU, // 4
     FRI, // 5
     SAT // 6
+};
+enum MONTHS{
+    JAN=1, // 1
+    FEB, // 2
+    MAT, // 3
+    APR, // 4
+    MAY,
+    JUN,
+    JUL,
+    AUG,
+    SEP,
+    OCT,
+    NOV,
+    DEC
+};
+struct DOB // ngày sinh
+{
+    int date;
+    enum MONTHS month;
+    int year;
+
 };
 
 #endif
